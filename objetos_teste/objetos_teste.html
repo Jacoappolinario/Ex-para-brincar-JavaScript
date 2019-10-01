@@ -1,0 +1,42 @@
+<meta charset="UTF-8" />
+
+<script>
+  function nomes(nome) {
+    for (nomePessoas of nome) {
+      console.log(
+        "Meu nome é " +
+          nomePessoas.nome +
+          " tenho " +
+          nomePessoas.idade +
+          " anos " +
+          "sou " +
+          nomePessoas.naturalidade +
+          " meu CPF é " +
+          nomePessoas.cpf
+      );
+    }
+  }
+
+  var pessoas = [
+    {
+      nome: "Jacó",
+      idade: "21",
+      naturalidade: "Brasileiro",
+      cpf: "0500.450.54-76"
+    },
+    {
+      nome: "Alanna",
+      idade: "24",
+      naturalidade: "Brasileiro",
+      cpf: "0500.450.54-85"
+    },
+    {
+      nome: "José",
+      idade: "23",
+      naturalidade: "Brasileiro",
+      cpf: "0500.450.54-45"
+    }
+  ];
+
+  nomes(pessoas);
+</script>
